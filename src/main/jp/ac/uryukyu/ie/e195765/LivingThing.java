@@ -1,10 +1,39 @@
 package jp.ac.uryukyu.ie.e195765;
 
 public class LivingThing {
-    String name;
-    int hitPoint;
-    int attack;
-    boolean dead;
+    private String name;
+    public String getName(){
+        return name;
+    }
+    public void setName(int name){
+        this.name = this.name;
+    }
+
+    private int hitPoint;
+    public int getHitPoint() {
+        return hitPoint;
+    }
+
+    public void setHitPoint(int hitPoint) {
+        this.hitPoint = this.hitPoint;
+    }
+
+    private int attack;
+    public int getAttack(){
+        return attack;
+    }
+    public void setAttack(int attack){
+        this.attack = attack;
+    }
+
+    private boolean dead;
+    public boolean getdead() {
+        return dead;
+    }
+    public void setDead(boolean dead) {
+        this.dead = dead;
+    }
+
 
     /**
      *
@@ -26,9 +55,6 @@ public class LivingThing {
         return dead;
     }
 
-    public String getName(){
-        return name;
-    }
     /**
      * 攻撃するメソッド。
      * attackに応じて乱数でダメージを算出し、name.wounded()によりダメージ処理を実行。
@@ -50,8 +76,5 @@ public class LivingThing {
         }
 
     }
-
-
-
 }
 
