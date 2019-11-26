@@ -5,8 +5,8 @@ public class LivingThing {
     public String getName(){
         return name;
     }
-    public void setName(int name){
-        this.name = this.name;
+    public void setName(String name){
+        this.name = name;
     }
 
     private int hitPoint;
@@ -15,11 +15,12 @@ public class LivingThing {
     }
 
     public void setHitPoint(int hitPoint) {
-        this.hitPoint = this.hitPoint;
+        this.hitPoint = hitPoint;
     }
 
     private int attack;
     public int getAttack(){
+
         return attack;
     }
     public void setAttack(int attack){
@@ -28,9 +29,11 @@ public class LivingThing {
 
     private boolean dead;
     public boolean getdead() {
+
         return dead;
     }
     public void setDead(boolean dead) {
+
         this.dead = dead;
     }
 

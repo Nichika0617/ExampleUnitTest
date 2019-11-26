@@ -32,11 +32,10 @@ public class Enemy extends LivingThing {
      * @param damage 受けたダメージ
      */
 
-    int HP = super.getHitPoint();
 @Override
     public void wounded(int damage) {
-        HP = HP -damage;
-        if (HP< 0) {
+        setHitPoint(getHitPoint()-damage);
+        if (getHitPoint()< 0) {
             super.setDead(true);
             System.out.printf("モンスター%sは倒れた。\n", super.getName());
         }
